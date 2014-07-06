@@ -1,4 +1,4 @@
-var target = 'payment-input';
+var target = 'input';
 
   function onInput() {
     var activeInput = document.activeElement;
@@ -9,12 +9,10 @@ var target = 'payment-input';
       inputLabel.innerHTML = title;
       activeInput.parentNode.insertBefore(inputLabel, activeInput);
     }
-
   }
 
   function isChanged() {
     var theInput = this;
-    console.log(theInput);
     this.className = this.className + " input-done";
     var theParent = this.parentNode;
     var theChildren = this.parentNode.children;
@@ -26,10 +24,14 @@ var target = 'payment-input';
     }
   }
 
-  var inputs = document.getElementsByClassName(target);
-  if (inputs) {
-    for (var i = 0; i < inputs.length; i++){
-      inputs[i].addEventListener("input", onInput, false);
-      inputs[i].addEventListener("change", isChanged, false);
+  function hasLeft() {
+    var theInput = this;
+    var theParent = this.parentNode;
+    var theChildren = this.parentNode.children;
+    for (var i = 0; i < theChildren.length; i++) {
+      var child = theChildren[i].tagName;
+      if(child === 'LABEL'){
+        theParent.removeChild(theChildren[i]);
+      }
     }
   }
