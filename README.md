@@ -1,4 +1,6 @@
 Label-Maker
 ===========
 
-On Text input add a label to form that was previously only using placeholders
+Add the terget class name to the target variable.
+
+Sample html and css coming.
