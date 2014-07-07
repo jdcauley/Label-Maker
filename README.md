@@ -1,6 +1,6 @@
 Label-Maker
 ===========
 
-Add the terget class name to the target variable.
+Simple JS tool that adds a label from the placeholder when typing into the field.
 
-Sample html and css coming.
+Example: http://jdcauley.github.io/Label-Maker

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Label Maker</title>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600,200|Roboto:200,400,300,500' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="labelmaker.css">
+  </head>
+  <body>
+    <div class="container">
+      <h2>Get Updates</h2>
+    <form class="form" action="#" method="post">
+      <div class="input-wrapper">
+        <input id="firstname" class="input" type="text" name="firstname" value="" placeholder="First Name" required>
+      </div>
+      <div class="input-wrapper">
+        <input id="lastname" class="input" type="text" name="lastname" value="" placeholder="Last Name" required>
+      </div>
+      <div class="input-wrapper">
+        <input id="email" class="input" pattern="[^ @]*@[^ @]*" type="text" name="email" value="" placeholder="Email" required>
+      </div>
+      <div class="input-wrapper">
+        <input id="btn" class="btn" type="submit" value="Submit" required>
+      </div>
+    </form>
+    </div>
+
+
+    <script src="labelmaker.js" type="text/javascript" defer></script>
+
+  </body>
+</html>

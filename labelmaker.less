@@ -1,0 +1,111 @@
+@import '_less/normalize';
+
+@font-family-sans-serif: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@headings-font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@white: #fff;
+@brand-gray: #ebebeb;
+@brand-middle: #a9a9a9;
+@brand-blue: #5275bd;
+@brand-primary: #51bd9d;
+@brand-dark: #262626;
+
+body{
+  font-family: @font-family-sans-serif;
+  font-size: 16px;
+}
+input{
+  border: none;
+  &:focus{
+    outline: none;
+  }
+}
+
+.input-wrapper{
+  position: relative;
+  display: block;
+  width: 100%;
+  &:first-child .input{
+    border-top: 5px solid @brand-gray;
+    &:active{
+      border-top: 5px solid @brand-blue;
+    }
+    &:hover{
+      border-top: 5px solid @brand-blue;
+    }
+    &:focus{
+      border-top: 5px solid @brand-blue;
+    }
+  }
+  label{
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    color: @brand-dark;
+  }
+}
+
+.input{
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  color: @brand-dark;
+  font-size: 16px;
+  border-left: 5px solid @brand-gray;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  &:focus{
+    border-left: 5px solid @brand-blue;
+  }
+  &:hover{
+    border-left: 5px solid @brand-blue;
+  }
+  &:active{
+    border-left: 5px solid @brand-blue;
+  }
+}
+
+.btn{
+  display: block;
+  width: 100%;
+  padding: 10px;
+  color: @brand-middle;
+  text-align: center;
+  font-size: 16px;
+  background: transparent;
+  border-right: 5px solid @brand-gray;
+  border-bottom: 5px solid @brand-gray;
+  &:active{
+    color: @brand-blue;
+    border-right: 3px solid @brand-blue;
+    border-bottom: 3px solid @brand-blue;
+  }
+  &:hover{
+    color: @brand-blue;
+    border-right: 5px solid @brand-blue;
+    border-bottom: 5px solid @brand-blue;
+  }
+  &:focus{
+    color: @brand-blue;
+    border-right: 5px solid @brand-blue;
+    border-bottom: 5px solid @brand-blue;
+  }
+}
+
+.container{
+  display: block;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+}
+.input-done{
+  background:  @brand-gray;
+  transition: background 1s ease;
+  -webkit-transition: background 1s ease;
+}
